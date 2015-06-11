@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Locadora.Core.DAO
 {
-    class LocacaoDAO : GenericDAO<Locacao>
+    public class LocacaoDAO : GenericDAO<Locacao>
     {
         public LocacaoDAO() : base() { }
     }

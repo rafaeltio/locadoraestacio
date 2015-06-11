@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Locadora.Core.DAO
 {
-    class CategoriaDAO : GenericDAO<Categoria>
+    public class CategoriaDAO : GenericDAO<Categoria>
     {
         public CategoriaDAO() : base() { }
     }

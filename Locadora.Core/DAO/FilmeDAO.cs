@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Locadora.Core.DAO
 {
-    class FilmeDAO : GenericDAO<Filme>
+    public class FilmeDAO : GenericDAO<Filme>
     {
         public FilmeDAO() : base() { }
     }

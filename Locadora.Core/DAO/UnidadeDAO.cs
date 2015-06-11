@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Locadora.Core.DAO
 {
-    class UnidadeDAO : GenericDAO<Unidade>
+    public class UnidadeDAO : GenericDAO<Unidade>
     {
         public UnidadeDAO() : base() { }
     }

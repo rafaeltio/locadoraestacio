@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Locadora.Core.Entity
 {
-    class Filme : IEntity
+    public class Filme : IEntity
     {
         public int ID { get; set; }
         public string Titulo { get; set; }
