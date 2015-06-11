@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Locadora.Core.CustomAttributes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 

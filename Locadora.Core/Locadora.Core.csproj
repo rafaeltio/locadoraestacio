@@ -55,18 +55,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomAttributes\NotMapped.cs" />
     <Compile Include="DAO\CategoriaDAO.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\FilmeDAO.cs" />
     <Compile Include="DAO\GenericDAO.cs" />
     <Compile Include="DAO\IGenericDAO.cs" />
     <Compile Include="DAO\LocacaoDAO.cs" />
+    <Compile Include="DAO\TipoDAO.cs" />
     <Compile Include="DAO\UnidadeDAO.cs" />
     <Compile Include="Entity\Categoria.cs" />
     <Compile Include="Entity\Cliente.cs" />
     <Compile Include="Entity\Filme.cs" />
     <Compile Include="Entity\IEntity.cs" />
     <Compile Include="Entity\Locacao.cs" />
+    <Compile Include="Entity\Tipo.cs" />
     <Compile Include="Entity\Unidade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\IENumerableExtensions.cs" />
