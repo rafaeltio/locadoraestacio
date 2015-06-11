@@ -1,0 +1,13 @@
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Release\App_data\Locadora.mdf
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Release\App_data\Locadora_log.ldf
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Release\Locadora.Core.dll
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Release\Locadora.Core.pdb
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\obj\Release\Locadora.Core.dll
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\obj\Release\Locadora.Core.pdb
+C:\Users\Rafael\Documents\Visual Studio 2013\Projects\LocadoraEstacio\Locadora.Core\bin\Release\App_data\Locadora.mdf
+C:\Users\Rafael\Documents\Visual Studio 2013\Projects\LocadoraEstacio\Locadora.Core\bin\Release\App_data\Locadora_log.ldf
+C:\Users\Rafael\Documents\Visual Studio 2013\Projects\LocadoraEstacio\Locadora.Core\bin\Release\Locadora.Core.dll
+C:\Users\Rafael\Documents\Visual Studio 2013\Projects\LocadoraEstacio\Locadora.Core\bin\Release\Locadora.Core.pdb
+C:\Users\Rafael\Documents\Visual Studio 2013\Projects\LocadoraEstacio\Locadora.Core\obj\Release\Locadora.Core.csprojResolveAssemblyReference.cache
+C:\Users\Rafael\Documents\Visual Studio 2013\Projects\LocadoraEstacio\Locadora.Core\obj\Release\Locadora.Core.dll
+C:\Users\Rafael\Documents\Visual Studio 2013\Projects\LocadoraEstacio\Locadora.Core\obj\Release\Locadora.Core.pdb

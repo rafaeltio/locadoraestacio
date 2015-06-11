@@ -1,0 +1,13 @@
+C:\Users\Rafael\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora.mdf
+C:\Users\Rafael\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora_log.ldf
+C:\Users\Rafael\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora.Core.dll
+C:\Users\Rafael\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora.Core.pdb
+C:\Users\Rafael\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\obj\Debug\Locadora.Core.dll
+C:\Users\Rafael\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\obj\Debug\Locadora.Core.pdb
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora.mdf
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora_log.ldf
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora.Core.dll
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\bin\Debug\Locadora.Core.pdb
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\obj\Debug\Locadora.Core.dll
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\obj\Debug\Locadora.Core.pdb
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.Core\obj\Debug\Locadora.Core.csprojResolveAssemblyReference.cache

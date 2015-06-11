@@ -1,0 +1,13 @@
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\bin\Debug\Locadora.mdf
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\bin\Debug\Locadora_log.ldf
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\bin\Debug\Locadora.View.Forms.exe.config
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\bin\Debug\Locadora.View.Forms.exe
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\bin\Debug\Locadora.View.Forms.pdb
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\bin\Debug\Locadora.Core.dll
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\bin\Debug\Locadora.Core.pdb
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.csprojResolveAssemblyReference.cache
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.FormCadastro.resources
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.Properties.Resources.resources
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.csproj.GenerateResource.Cache
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.exe
+C:\Users\rafael.menezes\Documents\Visual Studio 2010\Projects\Locadora.Core\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.pdb
