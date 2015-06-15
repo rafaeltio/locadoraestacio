@@ -12,7 +12,7 @@ namespace Locadora.Core.DAO
     public class GenericDAO<T> : IGenericDAO<T> where T : class, IEntity
     {
         public const string CONECTION_STRING = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=""C:\Users\rafael.menezes\Documents\Visual Studio 2013\Projects\locadoraestacio\Locadora.Core\App_data\Locadora.mdf"";Integrated Security=True";
-        public void Save(T entity)
+        public T Save(T entity)
         {
             try
             {
@@ -51,19 +51,60 @@ namespace Locadora.Core.DAO
 
                         foreach (var propertie in typeof(T).GetProperties())
                         {
-                            if (!propertie.Name.Equals("ID"))
-                                command.Parameters.AddWithValue("@" + propertie.Name ,propertie.GetValue(entity, null));
+                            object[] attr = propertie.GetCustomAttributes(true);
+                            if (attr.Length == 0)
+                                if (!propertie.Name.Equals("ID"))
+                                    command.Parameters.AddWithValue("@" + propertie.Name ,propertie.GetValue(entity, null));
                         }
+                        conn.Open();
+                        command.ExecuteNonQuery();
+                        conn.Close();
                     }
-                    conn.Open();
-                    command.ExecuteNonQuery();
-                    conn.Close();
+                    
                 }
             }
             catch (Exception)
             {
                 throw;
             }
+            return ReturnLastElement(entity);
+        }
+
+        public T ReturnLastElement(T e)
+        {
+            T element = Activator.CreateInstance<T>();
+            SqlDataReader reader;
+            try
+            {
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    conn.ConnectionString = CONECTION_STRING;
+                    cmd.Connection = conn;
+                    cmd.CommandText = "SELECT TOP 1 * FROM " + e.GetType().Name + " ORDER BY ID DESC";
+                    conn.Open();
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        foreach (var f in typeof(T).GetProperties())
+                        {
+                            if (f.GetCustomAttributes(true).Length == 0)
+                            {
+                                var o = reader[f.Name];
+                                if (o.GetType() != typeof(DBNull)) f.SetValue(element, o, null);
+                            }
+                        }
+                        return element;
+                    }
+                    conn.Close();
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            return element;
         }
 
         public void Delete(T entity)

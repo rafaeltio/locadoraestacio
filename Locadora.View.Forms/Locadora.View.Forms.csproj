@@ -44,8 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facade\CategoriaFacade.cs" />
     <Compile Include="Facade\ClienteFacade.cs" />
     <Compile Include="Facade\FilmeUnidadeFacade.cs" />
+    <Compile Include="Facade\TipoFacade.cs" />
     <Compile Include="FormCadastro.cs">
       <SubType>Form</SubType>
     </Compile>

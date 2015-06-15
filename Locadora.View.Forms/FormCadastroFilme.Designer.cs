@@ -41,7 +41,6 @@
             this.textBoxIdFilme = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,9 +48,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridViewFilme = new System.Windows.Forms.DataGridView();
+            this.numValor = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilme)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numValor)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -160,8 +161,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.numValor);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.maskedTextBox1);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.comboBoxTipo);
             this.panel2.Controls.Add(this.label5);
@@ -179,14 +180,6 @@
             this.label7.Size = new System.Drawing.Size(31, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Valor";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(278, 3);
-            this.maskedTextBox1.Mask = "000.000.000.00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(88, 20);
-            this.maskedTextBox1.TabIndex = 12;
             // 
             // label6
             // 
@@ -251,6 +244,14 @@
             this.dataGridViewFilme.Size = new System.Drawing.Size(380, 203);
             this.dataGridViewFilme.TabIndex = 4;
             // 
+            // numValor
+            // 
+            this.numValor.DecimalPlaces = 2;
+            this.numValor.Location = new System.Drawing.Point(279, 4);
+            this.numValor.Name = "numValor";
+            this.numValor.Size = new System.Drawing.Size(94, 20);
+            this.numValor.TabIndex = 14;
+            // 
             // FormCadastroFilme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,6 +269,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilme)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numValor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -288,12 +290,12 @@
         private System.Windows.Forms.TextBox textBoxIdUnidade;
         private System.Windows.Forms.ComboBox comboBoxTipo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridViewFilme;
+        private System.Windows.Forms.NumericUpDown numValor;
     }
 }

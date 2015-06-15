@@ -14,10 +14,27 @@ namespace Locadora.View.Forms
 {
     public partial class FormCadastroFilme : Form
     {
+        protected BindingSource bs = new BindingSource();
         public FormCadastroFilme()
         {
             InitializeComponent();
+            dataGridViewFilme.DataSource = bs;
+            PopularDGVFilmes();
+            //Categoria
+            comboBoxCategoria.DataSource = CategoriaFacade.ListAll();
+            comboBoxCategoria.DisplayMember = "Descricao";
+            comboBoxCategoria.ValueMember = "ID";
+            //Tipo
+            comboBoxTipo.DataSource = TipoFacade.ListAll();
+            comboBoxTipo.DisplayMember = "Descricao";
+            comboBoxTipo.ValueMember = "ID";
         }
+
+        public void PopularDGVFilmes()
+        {
+            bs.DataSource = FilmeUnidadeFacade.ListAll();
+        }
+
         private void button_Click(object sender, EventArgs e)
         {
             switch (((Control)sender).Text)
@@ -29,8 +46,8 @@ namespace Locadora.View.Forms
                     Apagar();
                     break;
             }
-            LimparCampos();
-            //PopularDGVClientes();
+            //LimparCampos();
+            PopularDGVFilmes();
         }
 
         private void Apagar()
@@ -55,7 +72,24 @@ namespace Locadora.View.Forms
 
         private void PopularObjs(ref Unidade u, ref Filme f)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //Filme
+                f.ID = int.Parse(textBoxIdFilme.Text);
+                f.Titulo = textBoxTitulo.Text;
+                f.Ano = maskedTextBoxAno.Text;
+                f.Observacao = textBoxObs.Text;
+                f.CategoriaID = int.Parse(comboBoxCategoria.SelectedValue.ToString());
+                //Unidade
+                u.ID = int.Parse(textBoxIdUnidade.Text);
+                u.FilmeID = f.ID;
+                u.TipoID = int.Parse(comboBoxTipo.SelectedValue.ToString());
+                u.Valor = numValor.Value;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Formato incorreto");
+            }
         }
     }
 }

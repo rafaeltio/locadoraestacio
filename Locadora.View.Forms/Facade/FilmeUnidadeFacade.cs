@@ -22,7 +22,7 @@ namespace Locadora.View.Forms.Facade
 
                 if (u.ID.Equals(0) && f.ID.Equals(0))
                 {
-                    filmeDao.Save(f);
+                    u.FilmeID = filmeDao.Save(f).ID;
                     unidadeDao.Save(u);
                 }
                 else
