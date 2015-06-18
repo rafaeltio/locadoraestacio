@@ -1,5 +1,6 @@
 ﻿using Locadora.Core.Entity;
 using Locadora.View.Forms.Facade;
+using Locadora.View.Forms.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,7 @@ namespace Locadora.View.Forms
                     Apagar();
                     break;
             }
-            //LimparCampos();
+            LimparCampos();
             PopularDGVFilmes();
         }
 
@@ -57,7 +58,10 @@ namespace Locadora.View.Forms
 
         private void LimparCampos()
         {
-            throw new NotImplementedException();
+            FormTools.LimparControles(panel1.Controls);
+            FormTools.LimparControles(panel2.Controls);
+            textBoxIdFilme.Text = "0";
+            textBoxIdUnidade.Text = "0";
         }
 
         private void SaveOrUpdate()
