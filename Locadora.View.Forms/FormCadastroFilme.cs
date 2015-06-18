@@ -43,7 +43,7 @@ namespace Locadora.View.Forms
                 case "Gravar":
                     SaveOrUpdate();
                     break;
-                case "Apagar":
+                case "Excluir":
                     Apagar();
                     break;
             }
@@ -53,7 +53,12 @@ namespace Locadora.View.Forms
 
         private void Apagar()
         {
-            throw new NotImplementedException();
+            Filme f = new Filme();
+            Unidade u = new Unidade();
+
+            PopularObjs(ref u, ref f);
+
+            FilmeUnidadeFacade.Remove(u, f);
         }
 
         private void LimparCampos()
