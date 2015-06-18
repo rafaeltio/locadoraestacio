@@ -14,10 +14,5 @@ namespace Locadora.View.Forms.Facade
         {
             return new TipoDAO().All();
         }
-
-        public static IEnumerable<Tipo> SQL(string sql)
-        {
-            return new TipoDAO().GetSqlData<Tipo>(sql);
-        }
     }
 }

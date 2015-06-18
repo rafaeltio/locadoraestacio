@@ -14,10 +14,5 @@ namespace Locadora.View.Forms.Facade
         {
             return new CategoriaDAO().All();
         }
-
-        public static IEnumerable<Categoria> SQL(string sql)
-        {
-            return new CategoriaDAO().GetSqlData<Categoria>(sql);
-        }
     }
 }

@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxIdFilme = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.numValor = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxTipo = new System.Windows.Forms.ComboBox();
@@ -48,11 +49,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridViewFilme = new System.Windows.Forms.DataGridView();
-            this.numValor = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilme)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numValor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilme)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -172,6 +172,14 @@
             this.panel2.Size = new System.Drawing.Size(378, 30);
             this.panel2.TabIndex = 1;
             // 
+            // numValor
+            // 
+            this.numValor.DecimalPlaces = 2;
+            this.numValor.Location = new System.Drawing.Point(279, 4);
+            this.numValor.Name = "numValor";
+            this.numValor.Size = new System.Drawing.Size(94, 20);
+            this.numValor.TabIndex = 14;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -238,19 +246,16 @@
             // 
             // dataGridViewFilme
             // 
+            this.dataGridViewFilme.AllowUserToAddRows = false;
+            this.dataGridViewFilme.AllowUserToDeleteRows = false;
             this.dataGridViewFilme.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFilme.Location = new System.Drawing.Point(10, 306);
             this.dataGridViewFilme.Name = "dataGridViewFilme";
+            this.dataGridViewFilme.ReadOnly = true;
+            this.dataGridViewFilme.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewFilme.Size = new System.Drawing.Size(380, 203);
             this.dataGridViewFilme.TabIndex = 4;
-            // 
-            // numValor
-            // 
-            this.numValor.DecimalPlaces = 2;
-            this.numValor.Location = new System.Drawing.Point(279, 4);
-            this.numValor.Name = "numValor";
-            this.numValor.Size = new System.Drawing.Size(94, 20);
-            this.numValor.TabIndex = 14;
+            this.dataGridViewFilme.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewFilmes_CellMouseDoubleClick);
             // 
             // FormCadastroFilme
             // 
@@ -268,8 +273,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilme)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numValor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilme)).EndInit();
             this.ResumeLayout(false);
 
         }

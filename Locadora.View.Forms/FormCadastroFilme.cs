@@ -91,5 +91,16 @@ namespace Locadora.View.Forms
                 MessageBox.Show("Formato incorreto");
             }
         }
+        private void dataGridViewFilmes_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            textBoxIdFilme.Text            = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[0].Value.ToString();
+            textBoxIdUnidade.Text          = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[1].Value.ToString();
+            textBoxTitulo.Text             = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[2].Value.ToString();
+            maskedTextBoxAno.Text          = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[3].Value.ToString();
+            textBoxObs.Text                = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[4].Value.ToString();
+            comboBoxCategoria.SelectedText = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[5].Value.ToString();
+            comboBoxTipo.SelectedText      = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[6].Value.ToString();
+            numValor.Text                  = ((DataGridView)sender).Rows[Convert.ToInt32(e.RowIndex)].Cells[7].Value.ToString();
+        }
     }
 }

@@ -219,33 +219,5 @@ namespace Locadora.Core.DAO
             }
             return list;
         }
-
-        public IEnumerable<T> GetSqlData<T>(string sql)
-        {
-            var properties = typeof(T).GetProperties();
-
-            using (var conn = new SqlConnection(CONECTION_STRING))
-            {
-                using (var comm = new SqlCommand(sql, conn))
-                {
-                    conn.Open();
-                    using (var reader = comm.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            var element = Activator.CreateInstance<T>();
-
-                            foreach (var f in properties)
-                            {
-                                var o = reader[f.Name];
-                                if (o.GetType() != typeof(DBNull)) f.SetValue(element, o, null);
-                            }
-                            yield return element;
-                        }
-                    }
-                    conn.Close();
-                }
-            }
-        }
     }
 }

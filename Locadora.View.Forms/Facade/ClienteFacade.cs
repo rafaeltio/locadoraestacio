@@ -59,10 +59,5 @@ namespace Locadora.View.Forms.Facade
         {
             return new ClienteDAO().All();
         }
-
-        public static IEnumerable<Cliente> SQL(string sql) 
-        {
-            return new ClienteDAO().GetSqlData<Cliente>(sql);
-        }
     }
 }

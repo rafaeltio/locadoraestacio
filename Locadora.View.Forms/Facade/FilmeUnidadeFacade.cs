@@ -54,14 +54,23 @@ namespace Locadora.View.Forms.Facade
 
         }
 
-        public static IEnumerable<Unidade> ListAll()
+        public static IEnumerable<Object> ListAll()
         {
-            return new UnidadeDAO().All();
-        }
+            IEnumerable<Filme> filmes = new FilmeDAO().All();
+            IEnumerable<Unidade> unidades = new UnidadeDAO().All();
+            IEnumerable<Categoria> categorias = new CategoriaDAO().All();
+            IEnumerable<Tipo> tipos = new TipoDAO().All();
 
-        public static IEnumerable<Unidade> SQL(string sql)
-        {
-            return new UnidadeDAO().GetSqlData<Unidade>(sql);
+            var query = from u in unidades
+                         join f in filmes
+                            on u.FilmeID equals f.ID
+                         join c in categorias
+                            on f.CategoriaID equals c.ID
+                         join t in tipos
+                            on u.TipoID equals t.ID
+                         select new { IDFilme = f.ID, IDUnidade = u.ID, Titulo = f.Titulo, Ano = f.Ano, Obs = f.Observacao, Categoria = c.Descricao, Tipo = t.Descricao, Valor = u.Valor };
+
+            return query.AsEnumerable<Object>();
         }
     }
 }
