@@ -25,3 +25,4 @@ C:\Users\rafael.menezes\Documents\Visual Studio 2013\Projects\locadoraestacio\Lo
 C:\Users\rafael.menezes\Documents\Visual Studio 2013\Projects\locadoraestacio\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.exe
 C:\Users\rafael.menezes\Documents\Visual Studio 2013\Projects\locadoraestacio\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.pdb
 C:\Users\rafael.menezes\Documents\Visual Studio 2013\Projects\locadoraestacio\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.FormCadastroFilme.resources
+C:\Users\rafael.menezes\Documents\Visual Studio 2013\Projects\locadoraestacio\Locadora.View.Forms\obj\Debug\Locadora.View.Forms.FormLocacao.resources

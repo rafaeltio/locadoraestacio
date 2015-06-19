@@ -68,7 +68,7 @@ namespace Locadora.View.Forms.Facade
                             on f.CategoriaID equals c.ID
                          join t in tipos
                             on u.TipoID equals t.ID
-                         select new { IDFilme = f.ID, IDUnidade = u.ID, Titulo = f.Titulo, Ano = f.Ano, Obs = f.Observacao, Categoria = c.Descricao, Tipo = t.Descricao, Valor = u.Valor };
+                        select new { Titulo = f.Titulo, Ano = f.Ano, Obs = f.Observacao, Categoria = c.Descricao, Tipo = t.Descricao, Valor = u.Valor, IDFilme = f.ID, IDUnidade = u.ID, IDCategoria = c.ID, IDTipo = t.ID };
 
             return query.AsEnumerable<Object>();
         }

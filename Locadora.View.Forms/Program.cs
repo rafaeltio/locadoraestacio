@@ -16,7 +16,7 @@ namespace Locadora.View.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCadastroFilme());
+            Application.Run(new FormLocacao());
         }
     }
 }

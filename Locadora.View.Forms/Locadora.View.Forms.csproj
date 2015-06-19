@@ -60,6 +60,12 @@
     <Compile Include="FormCadastroFilme.Designer.cs">
       <DependentUpon>FormCadastroFilme.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocacao.Designer.cs">
+      <DependentUpon>FormLocacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\FormTools.cs" />
@@ -68,6 +74,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroFilme.resx">
       <DependentUpon>FormCadastroFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocacao.resx">
+      <DependentUpon>FormLocacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
